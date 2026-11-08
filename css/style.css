@@ -311,6 +311,8 @@ a.info-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 /* ---------- Footer ---------- */
 .footer { background: var(--bg-alt); border-top: 1px solid var(--rule); padding: 48px 0 28px; text-align: center; }
 .footer-logo { font-size: clamp(1.4rem, 4vw, 1.8rem); }
+.footer-loc { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 6px; font-size: .92rem; color: var(--ink-2); }
+.footer-loc .ico { color: var(--accent); }
 .footer-social { justify-content: center; margin-top: 20px; }
 .footer-note { margin-top: 18px; font-size: .78rem; color: var(--ink-3); }
 .copyright { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--rule); font-size: .88rem; color: var(--ink-3); }
