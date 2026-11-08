@@ -1,104 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Page</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveen Kumar Vunnam | Software Engineer</title>
+  <meta name="description" content="Naveen Kumar Vunnam is a Senior Software Engineer at Wells Fargo in Hyderabad, building low-latency trading systems, distributed systems and AI agents for engineering teams.">
+  <meta name="author" content="Naveen Kumar Vunnam">
+  <meta name="theme-color" content="#fbfbfc">
+  <link rel="canonical" href="https://naveen219.github.io/naveen-portfolio/">
 
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Naveen Kumar Vunnam | Software Engineer">
+  <meta property="og:description" content="Software engineer working where finance meets technology, building low-latency trading systems at Wells Fargo.">
+  <meta property="og:url" content="https://naveen219.github.io/naveen-portfolio/">
+  <meta property="og:image" content="https://naveen219.github.io/naveen-portfolio/img/naveen.jpg">
+  <meta property="og:image:alt" content="Portrait of Naveen Kumar Vunnam">
+  <meta name="twitter:card" content="summary">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Naveen Kumar Vunnam",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Wells Fargo" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" },
+    "email": "mailto:naveennavy219@gmail.com",
+    "url": "https://naveen219.github.io/naveen-portfolio/",
+    "image": "https://naveen219.github.io/naveen-portfolio/img/naveen.jpg",
+    "alumniOf": "Mohan Babu University",
+    "sameAs": ["https://www.linkedin.com/in/naveen-kumar-vunnam", "https://github.com/Naveen219"]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="13" rx="2"/><path d="M8.5 7V5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2M2.5 13h19"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 4 1.5 9 12 14l10.5-5L12 4z"/><path d="M5.5 11v5c0 1.7 2.9 3 6.5 3s6.5-1.3 6.5-3v-5M22.5 9v6"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2.5 9.5 5L12 12.5 2.5 7.5 12 2.5z"/><path d="m2.5 12 9.5 5 9.5-5M2.5 16.5l9.5 5 9.5-5"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4.5 4.5 0 0 1-.5 10H7z"/></symbol>
+      <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13.5h.01M15 13.5h.01M9.5 17h5"/><circle cx="12" cy="3.5" r="1"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="7" rx="2"/><rect x="3" y="13.5" width="18" height="7" rx="2"/><path d="M7 7h.01M7 17h.01"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    </defs>
+  </svg>
 
-    <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href=#projects>Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="welcome-section">
-        <div>
-            <h1> Naveen Kumar</h1>
-            <p>a web developer</p>
-        </div>
-    </section>
-    <section id="projects">
-        <h1 class="section-name">My Projects</h1>
-        <div id="flex-container">
-            <div class="project-flex">
-                <h1 class="project-tile">Tribute Page</h1>
-                <a href="https://naveen219.github.io/Tribute-to-kalam/">
-                    <img src="img/tribute-page.PNG" alt="Tribute Page">
-                </a>
-                <a href="https://github.com/Naveen219/Tribute-to-kalam">
-                    <h2>Source Code</h2>
-                </a>
-            </div>
-            <div class="project-flex">
-                <h1 class="project-tile">Survey Form</h1>
-                <a href="https://naveen219.github.io/Survey-form/">
-                    <img src="img/survey-form.PNG" alt="Survey Form">
-                </a>
-                <a href="https://github.com/Naveen219/Survey-form">
-                    <h2>Source Code</h2>
-                </a>
-            </div>
-            <div class="project-flex">
-                <h1 class="project-tile">Landing Page</h1>
-                <a href="https://naveen219.github.io/Product-Landing-Page/">
-                    <img src="img/product-land.PNG" alt="Prouct Landing Page">
-                </a>
-                <a href="https://github.com/Naveen219/Product-Landing-Page">
-                    <h2>Source Code</h2>
-                </a>
-            </div>
-            <div class="project-flex">
-                <h1 class="project-tile">Tech Doc</h1>
-                <a href="https://naveen219.github.io/Tech-Doc-Page/">
-                    <img src="img/tech-doc.PNG" alt="Thymeleaf  Technical Doc">
-                </a>
-                <a href="https://github.com/Naveen219/Product-Landing-Page">
-                    <h2>Source Code</h2>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h1>Let's get in touch</h1>
-        <div class="social-menu">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/Naveenkumar219/" target=" _blank">
-                        <i class="fa fa-facebook">
-                        </i>
-                    </a>
-                </li>
-                <li>
-                    <a id=" profile-link" href="https://github.com/Naveen219" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:naveennavy219@gmail.com" target="_blank">
-                        <i class="fa fa-at"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/naveen-kumar-vunnam-9a064b177/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#home">Naveen Kumar Vunnam</a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            Portfolio <svg class="ico ico-sm"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#publications">Publications</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+          </div>
         </div>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="ico icon-moon"><use href="#i-moon"/></svg>
+          <svg class="ico icon-sun"><use href="#i-sun"/></svg>
+        </button>
+        <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hello">Hello, I'm</p>
+          <h1 class="hero-name">Naveen Kumar Vunnam</h1>
+          <p class="hero-role">Senior Software Engineer at Wells Fargo</p>
+          <p class="tagline"><span class="typed">I prefer vim over emacs and tabs over spaces.</span><span class="cursor" aria-hidden="true"></span></p>
+          <p class="hero-desc">
+            I work where finance meets technology, building low-latency trading systems and
+            AI agents that take the repetitive work out of engineering.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#contact">Get in Touch</a>
+            <a class="btn btn-outline" href="#experience">View My Work</a>
+          </div>
+          <ul class="social-row" aria-label="Profiles">
+            <li><a href="https://www.linkedin.com/in/naveen-kumar-vunnam" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/Naveen219" rel="noopener" aria-label="GitHub"><svg class="ico"><use href="#i-github"/></svg></a></li>
+            <li><a href="#contact" aria-label="Email me" title="Email me"><svg class="ico"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-halo">
+            <img src="img/naveen.jpg" width="480" height="480" alt="Naveen Kumar Vunnam">
+          </div>
+        </div>
+      </div>
+      <a class="scroll-down" href="#about" aria-label="Scroll to About"><svg class="ico"><use href="#i-chevron"/></svg></a>
     </section>
 
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="img/naveen-portrait.jpg" width="640" height="800" alt="Naveen Kumar Vunnam" loading="lazy">
+          </div>
+          <div class="about-text reveal">
+            <h3 class="sub-title">My Journey</h3>
+            <p>
+              I'm a Senior Software Engineer at Wells Fargo in Hyderabad. For the last four years I've
+              worked on the systems our capital markets trading desks use for pricing, risk, reference
+              data and reporting. Most of it is backend work: Java and Spring Boot services that talk
+              over Kafka, cache in Redis and run on Kubernetes.
+            </p>
+            <p>
+              Making trading systems faster is the kind of problem I enjoy most. I care about clean
+              service boundaries, solid CI/CD and dashboards that show problems before traders notice them.
+            </p>
+            <p>
+              Lately I've been building AI agents that handle repetitive engineering work. The most
+              recent one writes Spring Boot integration tests and is used across more than 80 of our
+              microservices.
+            </p>
+
+            <div class="features">
+              <div class="feature">
+                <span class="feature-icon"><svg class="ico"><use href="#i-zap"/></svg></span>
+                <div><h4>Low-latency systems</h4><p>Cut pricing and risk latency by 20% with Redis and Kafka</p></div>
+              </div>
+              <div class="feature">
+                <span class="feature-icon"><svg class="ico"><use href="#i-bot"/></svg></span>
+                <div><h4>AI agents</h4><p>Multi-agent test generation used across 80+ microservices</p></div>
+              </div>
+              <div class="feature">
+                <span class="feature-icon"><svg class="ico"><use href="#i-cloud"/></svg></span>
+                <div><h4>Platform &amp; delivery</h4><p>OpenShift, Helm and GitHub Actions; 80% faster release checks</p></div>
+              </div>
+              <div class="feature">
+                <span class="feature-icon"><svg class="ico"><use href="#i-layers"/></svg></span>
+                <div><h4>System design</h4><p>Event-driven, domain-driven services for trading desks</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot"><svg class="ico"><use href="#i-briefcase"/></svg></span>
+            <article class="card exp-card">
+              <header class="exp-head">
+                <span class="org-badge square"><img src="img/logos/wells-fargo.svg" alt="Wells Fargo logo" width="300" height="300" loading="lazy"></span>
+                <div>
+                  <h3>Senior Software Engineer</h3>
+                  <p class="org">Wells Fargo</p>
+                  <p class="meta"><svg class="ico ico-xs"><use href="#i-calendar"/></svg>Jan 2026 – Present</p>
+                  <p class="meta"><svg class="ico ico-xs"><use href="#i-pin"/></svg>Hyderabad, India</p>
+                </div>
+              </header>
+              <ul class="bullets">
+                <li>Built a multi-agent framework that writes Spring Boot integration tests. An orchestrator hands work to agents that scan the repo, plan coverage, critique the plan and generate the tests. It's used across 80+ microservices and has cut manual test-writing by an estimated 30 to 40%.</li>
+                <li>Reduced pricing and risk calculation latency by 20% by caching trader inputs (yield curves, prepayment speeds) in Redis and decoupling the calculations over Kafka.</li>
+                <li>Used domain-driven design to move misplaced bond reference-data fields into a dedicated metadata service that feeds real-time workflows for structured-product desks.</li>
+                <li>Built a service that generates and distributes Offering, Risk and P&amp;L reports to four trading desks in near real time.</li>
+                <li>Mentor junior engineers and lead code reviews.</li>
+              </ul>
+              <p class="stack-label">Tech Stack:</p>
+              <ul class="chips"><li>Java</li><li>Spring Boot</li><li>Kafka</li><li>Redis</li><li>AI Agents</li><li>Domain-Driven Design</li></ul>
+            </article>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot"><svg class="ico"><use href="#i-briefcase"/></svg></span>
+            <article class="card exp-card">
+              <header class="exp-head">
+                <span class="org-badge square"><img src="img/logos/wells-fargo.svg" alt="Wells Fargo logo" width="300" height="300" loading="lazy"></span>
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="org">Wells Fargo</p>
+                  <p class="meta"><svg class="ico ico-xs"><use href="#i-calendar"/></svg>Aug 2022 – Dec 2025</p>
+                  <p class="meta"><svg class="ico ico-xs"><use href="#i-pin"/></svg>Hyderabad, India</p>
+                </div>
+              </header>
+              <ul class="bullets">
+                <li>Led the migration of 10+ microservices to Red Hat OpenShift, with Helm charts and GitHub Actions pipelines that standardised how we deploy to Kubernetes.</li>
+                <li>Automated deployment validation for legacy VM-based services, cutting validation time by 80%.</li>
+                <li>Replaced legacy authentication in a .NET trading UI with an OAuth2-based API through Apigee.</li>
+                <li>Built Grafana dashboards across 10+ services so operations teams can spot pricing, risk and trade-execution anomalies as they happen.</li>
+              </ul>
+              <p class="stack-label">Tech Stack:</p>
+              <ul class="chips"><li>OpenShift</li><li>Kubernetes</li><li>Helm</li><li>GitHub Actions</li><li>OAuth2</li><li>Apigee</li><li>Grafana</li></ul>
+            </article>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot"><svg class="ico"><use href="#i-cap"/></svg></span>
+            <article class="card exp-card">
+              <header class="exp-head">
+                <span class="org-badge"><img src="img/logos/tcs.svg" alt="Tata Consultancy Services logo" width="400" height="136" loading="lazy"></span>
+                <div>
+                  <h3>Software Engineer Intern</h3>
+                  <p class="org">Tata Consultancy Services</p>
+                  <p class="meta"><svg class="ico ico-xs"><use href="#i-calendar"/></svg>Feb 2022 – Apr 2022</p>
+                </div>
+              </header>
+              <ul class="bullets">
+                <li>Built a real-time logistics KPI dashboard with Angular and Spring Boot, using Kafka for event-driven updates (about 10% lower latency).</li>
+              </ul>
+              <p class="stack-label">Tech Stack:</p>
+              <ul class="chips"><li>Angular</li><li>Spring Boot</li><li>Kafka</li></ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Publications <span class="count">1</span></h2>
+        <article class="card pub-card reveal">
+          <span class="org-badge square pub-logo"><img src="img/logos/researchgate.svg" alt="ResearchGate logo" width="32" height="32" loading="lazy"></span>
+          <div>
+            <h3>Securing Data Communication Using Blockchain</h3>
+            <p class="pub-authors">Naveen Kumar Vunnam (corresponding author), et al.</p>
+            <p class="pub-venue">Cosmos Journal of Engineering and Technology</p>
+            <p class="meta"><svg class="ico ico-xs"><use href="#i-calendar"/></svg>2023</p>
+            <ul class="chips chips-sm"><li>Python</li><li>Django</li><li>Blockchain</li><li>IPFS</li><li>Security</li></ul>
+            <p class="pub-desc">Designed a group authentication protocol and an IPFS-based data-sharing scheme that stores only access addresses and certificates on the blockchain, so requesters can verify data before it's shared. The security analysis covers confidentiality, integrity, privacy, non-repudiation and anonymity.</p>
+            <a class="btn btn-primary btn-sm" href="https://www.researchgate.net/publication/372529973_SECURING_DATA_COMMUNICATION_USING_BLOCKCHAIN" rel="noopener"><img class="btn-logo" src="img/logos/researchgate.svg" alt="" width="16" height="16">View on ResearchGate</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Certifications</h2>
+        <div class="cert-grid">
+          <article class="card cert reveal">
+            <span class="org-badge cert-logo"><img src="img/logos/oracle.svg" alt="Oracle logo" width="512" height="66" loading="lazy"></span>
+            <h3>Oracle Certified Professional, Java SE 11</h3>
+            <p class="issuer">Oracle</p>
+            <p class="meta"><svg class="ico ico-xs"><use href="#i-calendar"/></svg>2025</p>
+          </article>
+          <article class="card cert reveal">
+            <span class="org-badge square cert-logo pad"><img src="img/logos/microsoft.svg" alt="Microsoft logo" width="512" height="512" loading="lazy"></span>
+            <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+            <p class="issuer">Microsoft</p>
+            <p class="meta"><svg class="ico ico-xs"><use href="#i-calendar"/></svg>2022</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="edu-timeline">
+          <article class="card edu reveal">
+            <span class="year-badge">2018 – 2022</span>
+            <div class="edu-head">
+              <span class="org-badge"><img src="img/logos/mohan-babu-university.png" alt="Mohan Babu University logo" width="300" height="175" loading="lazy"></span>
+              <div>
+                <h3>B.Tech in Computer Science and Engineering</h3>
+                <p class="org">Mohan Babu University (formerly Sree Vidyanikethan Engineering College)</p>
+                <p class="edu-desc">CGPA 8.23/10, First Class with Distinction.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Achievements</h2>
+        <div class="ach-grid">
+          <article class="card ach reveal">
+            <span class="org-badge square"><img src="img/logos/wells-fargo.svg" alt="Wells Fargo logo" width="300" height="300" loading="lazy"></span>
+            <div>
+              <h3>Manager Spotlight Award (3×)</h3>
+              <p class="issuer">Wells Fargo</p>
+            </div>
+          </article>
+          <article class="card ach reveal">
+            <span class="org-badge square"><img src="img/logos/wells-fargo.svg" alt="Wells Fargo logo" width="300" height="300" loading="lazy"></span>
+            <div>
+              <h3>Team Spotlight Award</h3>
+              <p class="issuer">Wells Fargo</p>
+            </div>
+          </article>
+          <article class="card ach reveal">
+            <span class="org-badge square gh-logo" role="img" aria-label="GitHub logo"><svg class="gh-mark" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg></span>
+            <div>
+              <h3>Winner, GitHub Code Innovation Hackathon</h3>
+              <p class="issuer">50+ participants</p>
+            </div>
+          </article>
+          <article class="card ach reveal">
+            <span class="org-badge square pad"><img src="img/logos/google.svg" alt="Google logo" width="24" height="24" loading="lazy"></span>
+            <div>
+              <h3>Qualified for Google Code Jam</h3>
+              <p class="issuer">Google</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">My Skills</h2>
+        <div class="skill-grid">
+          <article class="card skill-card reveal">
+            <header><span class="skill-icon"><svg class="ico"><use href="#i-code"/></svg></span><h3>Languages</h3></header>
+            <ul class="skill-chips"><li>Java</li><li>Python</li></ul>
+          </article>
+          <article class="card skill-card reveal">
+            <header><span class="skill-icon"><svg class="ico"><use href="#i-database"/></svg></span><h3>Databases</h3></header>
+            <ul class="skill-chips"><li>Oracle</li><li>MongoDB</li><li>SQL Server</li></ul>
+          </article>
+          <article class="card skill-card reveal">
+            <header><span class="skill-icon"><svg class="ico"><use href="#i-server"/></svg></span><h3>Backend &amp; Infrastructure</h3></header>
+            <ul class="skill-chips"><li>Spring Boot</li><li>Kafka</li><li>Redis</li><li>Docker</li><li>Kubernetes</li><li>Red Hat OpenShift</li><li>Helm</li><li>GitHub Actions</li><li>Grafana</li><li>Splunk</li></ul>
+          </article>
+          <article class="card skill-card reveal">
+            <header><span class="skill-icon"><svg class="ico"><use href="#i-bot"/></svg></span><h3>AI &amp; Agentic Systems</h3></header>
+            <ul class="skill-chips"><li>AI Agents</li><li>Agentic Workflows</li><li>Claude Code</li><li>Model Context Protocol</li></ul>
+          </article>
+          <article class="card skill-card skill-wide reveal">
+            <header><span class="skill-icon"><svg class="ico"><use href="#i-layers"/></svg></span><h3>Concepts</h3></header>
+            <ul class="skill-chips"><li>Distributed Systems</li><li>Microservices</li><li>REST APIs</li><li>System Design</li><li>Event-Driven Architecture</li><li>Domain-Driven Design</li><li>Distributed Caching</li><li>CI/CD</li><li>Observability</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="card info-card email-card reveal">
+              <span class="info-icon"><svg class="ico"><use href="#i-mail"/></svg></span>
+              <div>
+                <h3>Email</h3>
+                <p>naveennavy219@gmail.com</p>
+                <div class="email-actions">
+                  <a class="chip-btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=naveennavy219@gmail.com" target="_blank" rel="noopener"><img src="img/logos/gmail.svg" alt="" width="16" height="12">Open in Gmail</a>
+                  <a class="chip-btn" href="mailto:naveennavy219@gmail.com"><svg class="ico ico-xs"><use href="#i-mail"/></svg>Email app</a>
+                  <button class="chip-btn copy-btn" type="button" data-copy="naveennavy219@gmail.com">Copy</button>
+                </div>
+              </div>
+            </div>
+            <a class="card info-card reveal" href="https://www.linkedin.com/in/naveen-kumar-vunnam" rel="noopener">
+              <span class="info-icon"><svg class="ico"><use href="#i-linkedin"/></svg></span>
+              <div><h3>LinkedIn</h3><p>linkedin.com/in/naveen-kumar-vunnam</p></div>
+            </a>
+            <a class="card info-card reveal" href="https://github.com/Naveen219" rel="noopener">
+              <span class="info-icon"><svg class="ico"><use href="#i-github"/></svg></span>
+              <div><h3>GitHub</h3><p>github.com/Naveen219</p></div>
+            </a>
+            <div class="card info-card reveal">
+              <span class="info-icon"><svg class="ico"><use href="#i-pin"/></svg></span>
+              <div><h3>Location</h3><p>Hyderabad, India</p></div>
+            </div>
+          </div>
+
+          <form class="card contact-form reveal" novalidate>
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text">
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <p class="form-error" role="alert" hidden></p>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" data-via="gmail"><img class="btn-logo gmail" src="img/logos/gmail.svg" alt="" width="18" height="14">Send via Gmail</button>
+              <button class="btn btn-outline" type="submit" data-via="app"><svg class="ico ico-xs"><use href="#i-send"/></svg>Send with email app</button>
+            </div>
+            <p class="form-note">Both options open a draft with your message filled in, so you just press send. You can also write to <a href="mailto:naveennavy219@gmail.com">naveennavy219@gmail.com</a> directly.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <a class="logo footer-logo" href="#home">Naveen Kumar Vunnam</a>
+      <ul class="social-row footer-social" aria-label="Profiles">
+        <li><a href="https://www.linkedin.com/in/naveen-kumar-vunnam" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a></li>
+        <li><a href="https://github.com/Naveen219" rel="noopener" aria-label="GitHub"><svg class="ico"><use href="#i-github"/></svg></a></li>
+        <li><a href="#contact" aria-label="Email me" title="Email me"><svg class="ico"><use href="#i-mail"/></svg></a></li>
+      </ul>
+      <p class="footer-note">This site uses GoatCounter for anonymous, cookie-free visit counts.</p>
+      <p class="copyright">© Naveen Kumar Vunnam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+  <!-- GoatCounter: privacy-friendly, cookie-free analytics. Dashboard: https://naveen219.goatcounter.com -->
+  <script data-goatcounter="https://naveen219.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
-
 </html>
