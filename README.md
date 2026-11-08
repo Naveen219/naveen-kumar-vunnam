@@ -2,7 +2,7 @@
 
 Personal portfolio of **Naveen Kumar Vunnam**, Senior Software Engineer at Wells Fargo, working where finance meets technology.
 
-**Live:** https://naveen219.github.io/naveen-portfolio/
+**Live:** https://naveen219.github.io/naveen-kumar-vunnam/
 
 ## Stack
 
