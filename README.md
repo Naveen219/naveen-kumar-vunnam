@@ -9,7 +9,7 @@ Personal portfolio of **Naveen Kumar Vunnam**, Senior Software Engineer at Wells
 Plain HTML, CSS and a little vanilla JavaScript. No framework and no build step, so GitHub Pages serves it as-is.
 
 - Sticky navbar, hero with photo, card-based sections (About, Experience, Publications, Certifications, Education, Achievements, Skills, Contact)
-- Light theme by default with a dark-mode toggle
+- Dark theme by default with a light-mode toggle
 - Typed tagline, scroll reveals and hover effects, all disabled for `prefers-reduced-motion`
 - Contact form that opens the visitor's email app (no backend needed)
 - Responsive down to small phones; keyboard accessible

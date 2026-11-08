@@ -1,5 +1,5 @@
 // Theme toggle, navigation, contact options, tagline typing and scroll reveals.
-// The page works without JS (light is the default and all content is visible).
+// The page works without JS (dark is the default and all content is visible).
 (function () {
   var root = document.documentElement;
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

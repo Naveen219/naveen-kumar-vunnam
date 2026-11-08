@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naveen Kumar Vunnam | Software Engineer</title>
   <meta name="description" content="Naveen Kumar Vunnam is a Senior Software Engineer at Wells Fargo in Hyderabad, building low-latency trading systems, distributed systems and AI agents for engineering teams.">
   <meta name="author" content="Naveen Kumar Vunnam">
-  <meta name="theme-color" content="#fbfbfc">
+  <meta name="theme-color" content="#121417">
   <link rel="canonical" href="https://naveen219.github.io/naveen-portfolio/">
 
   <meta property="og:type" content="profile">
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script>
-    try { var t = localStorage.getItem('theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+    try { if (localStorage.getItem('theme') === 'light') document.documentElement.removeAttribute('data-theme'); } catch (e) {}
   </script>
 
   <script type="application/ld+json">
@@ -96,7 +96,7 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode">
           <svg class="ico icon-moon"><use href="#i-moon"/></svg>
           <svg class="ico icon-sun"><use href="#i-sun"/></svg>
         </button>
